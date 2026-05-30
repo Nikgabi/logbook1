@@ -250,7 +250,7 @@ credentials:
 // SAVE
 // =====================================================
 
-async function saveCredential(){
+window.saveCredential = async function(){
 
 if(!window.currentUser){
 
@@ -306,7 +306,7 @@ loadCredentials();
 // LOAD
 // =====================================================
 
-async function loadCredentials(){
+window.loadCredentials = async function(){
 
 if(!window.currentUser){
 
@@ -434,7 +434,7 @@ document.getElementById("credentialsList")
 // OPEN FILE
 // =====================================================
 
-async function openAttachment(id){
+window.openAttachment = async function(id){
 
 const item =
 await db.credentials.get(id);
@@ -458,7 +458,7 @@ window.open(url);
 // DELETE
 // =====================================================
 
-async function deleteCredential(id){
+window.deleteCredential = async function(id){
 
 const confirmDelete =
 confirm("Να διαγραφεί η καταχώρηση;");

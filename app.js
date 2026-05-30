@@ -1,5 +1,7 @@
 window.currentUser = null;
 
+console.log("APP LOADED");
+
 import { initializeApp }
 
 from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
@@ -107,7 +109,7 @@ ${user.email}
 
 `;
 
-loadCredentials();
+window.loadCredentials();
 
 }
 else{
