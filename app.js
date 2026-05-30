@@ -1,4 +1,4 @@
-let currentUser = null;
+window.currentUser = null;
 
 import { initializeApp }
 
@@ -93,7 +93,7 @@ onAuthStateChanged(auth, async user => {
 
 if(user){
 
-currentUser = user;
+window.currentUser = user;
 
 document.getElementById("formCard")
 .style.display = "block";
@@ -112,7 +112,7 @@ loadCredentials();
 }
 else{
 
-currentUser = null;
+window.currentUser = null;
 
 document.getElementById("formCard")
 .style.display = "none";
